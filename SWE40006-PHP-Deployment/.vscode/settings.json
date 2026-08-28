@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b5298e26-a48f-4511-a735-873e57535294/resourceGroups/appsvc_linux_australiaeast/providers/Microsoft.Web/sites/ovy-swe40006-php-2026",
+    "appService.deploySubpath": "."
+}

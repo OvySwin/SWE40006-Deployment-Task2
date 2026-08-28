@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Cloud Deployment Dashboard";
+}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">Cloud Deployment Dashboard</h1>
+
+        <p class="lead text-muted">
+            SWE40006 Software Deployment and Evolution
+        </p>
+
+        <span class="badge bg-success fs-6">
+            Application Online
+        </span>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Runtime</h5>
+                    <p class="card-text fs-5">
+                        @ViewData["Runtime"]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Environment</h5>
+                    <p class="card-text fs-5">
+                        @ViewData["Environment"]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Hosting Platform</h5>
+                    <p class="card-text fs-5">
+                        Azure App Service
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card shadow-sm mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Application Configuration</h5>
+
+            <p class="mb-0">
+                @ViewData["DeploymentMessage"]
+            </p>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mt-4">
+        <div class="card-body">
+            <h5 class="card-title">Deployment Information</h5>
+
+            <table class="table mb-0">
+                <tbody>
+                    <tr>
+                        <th>Application</th>
+                        <td>CloudDeploymentDashboard</td>
+                    </tr>
+
+                    <tr>
+                        <th>Cloud Platform</th>
+                        <td>Microsoft Azure</td>
+                    </tr>
+
+                    <tr>
+                        <th>Service</th>
+                        <td>Azure App Service</td>
+                    </tr>
+
+                    <tr>
+                        <th>Region</th>
+                        <td>Australia East</td>
+                    </tr>
+
+                    <tr>
+                        <th>Server Time</th>
+                        <td>@ViewData["ServerTime"]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
